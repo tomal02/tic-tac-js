@@ -63,14 +63,16 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: fit-content;
+  padding: 50px;
+  background-color: lightblue;
+  border-radius: 10px;
 }
 
 .cell {
   flex: 0 0 32%;
   height: 50px;
   width: 50px;
-  margin-bottom: 5px;
+  margin: 5px 0;
   background-color: #999;
   text-align: center;
   border: 2px solid black;
