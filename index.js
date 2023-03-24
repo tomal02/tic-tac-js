@@ -7,7 +7,6 @@ const newGame = () => {
 
   for (let i = 0; i < cells.length; i++){
     cells[i].innerText = '';
-    console.log(cells[i])
   }
 }
 
@@ -22,5 +21,4 @@ const newGame = () => {
   } else if (targetedCell.innerText === "O"){
     targetedCell.innerText = ""
   }
-  console.log("cell clicked")
  }
