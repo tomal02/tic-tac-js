@@ -22,3 +22,11 @@ const newGame = () => {
     targetedCell.innerText = ""
   }
  }
+
+ const finishTurn = () => {
+  
+ }
+
+ const finishGame = () => {
+
+ }
