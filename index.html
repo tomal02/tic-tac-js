@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="./index.js"></script>
-  <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
-  
-  <div class="game-container">
-    <div class="game-header-container">
-      <h1 class="game-header">Tic Tac Toe Game</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="game-container">
+        <div class="game-header-container">
+          <h1 class="game-header">Tic Tac Toe Game</h1>
+        </div>
+        <h2 class="turn-header">It's reds go!</h2>
+        <div class="grid">
+          <div class="cell" onclick="cellClicked(0)"></div>
+          <div class="cell" onclick="cellClicked(1)"></div>
+          <div class="cell" onclick="cellClicked(2)"></div>
+          <div class="cell" onclick="cellClicked(3)"></div>
+          <div class="cell" onclick="cellClicked(4)"></div>
+          <div class="cell" onclick="cellClicked(5)"></div>
+          <div class="cell" onclick="cellClicked(6)"></div>
+          <div class="cell" onclick="cellClicked(7)"></div>
+          <div class="cell" onclick="cellClicked(8)"></div>
+        </div>
+        <div class="actions-container">
+          <button class="button new-game" onclick="newGame()">New Game</button>
+          <button class="button finish-turn" onclick="finishTurn()">
+            Finish Turn
+          </button>
+          <button class="button finish-button" onclick="finishGame()">
+            Finish Game
+          </button>
+        </div>
+      </div>
     </div>
-    <h2 class="turn-header">It's reds go!</h2>
-    <div class="grid">
-      <div class="cell" onclick="cellClicked(0)"></div>
-      <div class="cell" onclick="cellClicked(1)"></div>
-      <div class="cell" onclick="cellClicked(2)"></div>
-      <div class="cell" onclick="cellClicked(3)"></div>
-      <div class="cell" onclick="cellClicked(4)"></div>
-      <div class="cell" onclick="cellClicked(5)"></div>
-      <div class="cell" onclick="cellClicked(6)"></div>
-      <div class="cell" onclick="cellClicked(7)"></div>
-      <div class="cell" onclick="cellClicked(8)"></div>
-    </div>
-    <div class="actions-container">
-      <button class="button new-game" onclick="newGame()">
-        New Game
-      </button>
-      <button class="button finish-turn" onclick="finishTurn()">
-        Finish Turn
-      </button>
-      <button class="button finish-button" onclick="finishGame()">
-        Finish Game
-      </button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
