@@ -70,14 +70,21 @@ h6 {
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.player1 {
   background-color: #ff4136;
+}
+
+.player2 {
+  background-color: blue;
 }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 96vh;
+  min-height: 100vh;
 }
 
 .game-container {
